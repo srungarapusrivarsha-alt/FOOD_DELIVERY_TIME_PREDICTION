@@ -17,9 +17,11 @@ city_mapping = {'Bengaluru': 0,'Kolkata': 1,'Hyderabad': 2,'Pune': 3,'Mumbai': 4
 
 traffic_mapping = {'Low': 0,'Medium': 1,'High': 2,'Gridlock': 3}
 
-weather_mapping = {'Sunny': 0,'Cloudy': 1,'Rainy': 2,'Foggy': 3,'Overcast': 4,'Stormy': 5,'Clear': 6,'Thunderstorm': 7}
+# weather_mapping = {'Sunny': 0,'Cloudy': 1,'Rainy': 2,'Foggy': 3,'Overcast': 4,'Stormy': 5,'Clear': 6,'Thunderstorm': 7}
+weather_mapping={'Sunny': 0,'Cloudy': 1,'Rainy': 2}
 
-time_mapping = {'Breakfast': 0,'Morning': 1,'Afternoon': 2,'Lunch': 3,'Evening': 4,'Dinner': 5,'Night': 6,'Latenight': 7,'Snacks': 8,'Regular': 9}
+# time_mapping = {'Breakfast': 0,'Morning': 1,'Afternoon': 2,'Lunch': 3,'Evening': 4,'Dinner': 5,'Night': 6,'Latenight': 7,'Snacks': 8,'Regular': 9}
+time_mapping={'Morning': 0,'Afternoon': 1,'Night': 2}
 
 x['City'] = x['City'].map(city_mapping)
 x['Traffic_Level'] = x['Traffic_Level'].map(traffic_mapping)
