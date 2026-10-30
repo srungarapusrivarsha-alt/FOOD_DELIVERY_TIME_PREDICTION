@@ -38,10 +38,10 @@ label {
 </style>
 """, unsafe_allow_html=True)
 # order_time = pd.read_csv(r"C:\Users\sriva\Desktop\ml_models\food_delivery_time_prediction\FOOD_DELIVERY_REPORT")
-# order_time = pd.read_csv(r"FOOD_DELIVERY_REPORT.csv")
-order_time = pd.read_csv(
-    r"C:\Users\sriva\Desktop\ml_models\food_delivery_time_prediction\FOOD_DELIVERY_REPORT.csv"
-)
+order_time = pd.read_csv(r"FOOD_DELIVERY_REPORT.csv")
+# order_time = pd.read_csv(
+#     r"C:\Users\sriva\Desktop\ml_models\food_delivery_time_prediction\FOOD_DELIVERY_REPORT.csv"
+# )
 
 x = order_time[['City','Distance_km','Traffic_Level','Weather_Conditions','Time_of_Day','Restaurant_Preparation_Time_min','Number_of_Items','Restaurant_Active_Orders','Order_Value_INR']].copy()
 
