@@ -5,9 +5,43 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+st.markdown("""
+<style>
 
+.stApp {
+    background-color: #FFF4E6;
+}
+.block-container {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 40px;
+    border-radius: 15px;
+}
+h1 {
+    color: #704214;
+    text-align: center;
+}
+h1, h2, h3 {
+    color: #000000 !important;
+    font-weight: bold;
+    padding:20
+}
+label {
+    color: #704214 !important;
+    font-weight: bold;
+}
+.stButton > button {
+    background-color: #B87945;
+    color: white;
+    border-radius: 8px;
+    width: 100%;
+}
+</style>
+""", unsafe_allow_html=True)
 # order_time = pd.read_csv(r"C:\Users\sriva\Desktop\ml_models\food_delivery_time_prediction\FOOD_DELIVERY_REPORT")
-order_time = pd.read_csv("FOOD_DELIVERY_REPORT")
+# order_time = pd.read_csv(r"FOOD_DELIVERY_REPORT.csv")
+order_time = pd.read_csv(
+    r"C:\Users\sriva\Desktop\ml_models\food_delivery_time_prediction\FOOD_DELIVERY_REPORT.csv"
+)
 
 x = order_time[['City','Distance_km','Traffic_Level','Weather_Conditions','Time_of_Day','Restaurant_Preparation_Time_min','Number_of_Items','Restaurant_Active_Orders','Order_Value_INR']].copy()
 
