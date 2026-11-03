@@ -35,6 +35,12 @@ label {
     border-radius: 8px;
     width: 100%;
 }
+.stSuccess {
+    background-color: #D1FAE5;
+    color: #047857;
+    padding: 20px;
+    border-radius: 12px;
+}
 </style>
 """, unsafe_allow_html=True)
 # order_time = pd.read_csv(r"C:\Users\sriva\Desktop\ml_models\food_delivery_time_prediction\FOOD_DELIVERY_REPORT")
